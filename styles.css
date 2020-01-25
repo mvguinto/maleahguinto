@@ -1,0 +1,199 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #004461;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+a {
+	display: block;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #0087C1;
+}
+
+.active {
+	background-color: #0087C1;
+}
+
+body {
+	background-color: #C1EDFF;
+}
+
+strong {
+	color: #004866;
+}
+
+.textbody {
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+.main {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.portfolio-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+	
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	a {
+		padding: 4px;
+	}
+
+	p {
+		font-size: 12px;
+	}
+
+	li a {
+		padding: 7px 8px;
+	}
+
+	h1 {
+		font-size: 24px;
+		padding-bottom: 4px;
+	}
+
+	body {
+		padding-bottom: 7px;
+	}
+
+	hr {
+		margin: 4px 0px;
+	}
+
+	br {
+		display: block;
+		margin: 0px 0;
+	}
+
+	.textbody{
+		margin: 54px 7px;
+	}
+
+	.portfolio-text-item {
+		margin: 6px 12px;
+		height: 128px;
+		padding: 0px;
+		text-align: left;
+	}
+
+	#lego {	
+		padding: 12px;
+		margin: 6px 12px;
+		background-color: #FFAB00;
+	}
+
+	#bug {
+		padding: 12px;
+		margin: 6px 12px;
+		background-color: #7D929C;
+	}	
+
+	#still-life {
+		padding: 12px;
+		margin: 6px 12px 12px 12px;
+		background-color: #A41010;
+	}
+
+	img {
+		height: 128px;
+		width: 160px;
+	}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+	a {
+		padding: 8px;
+	}
+
+	li a {
+		padding: 14px 16px;
+	}
+
+	h1 {
+		padding-bottom: 8px;
+	}
+
+	body {
+		padding-bottom: 14px;
+	}
+	hr {
+		margin: 8px 0px;
+	}
+
+	.textbody{
+		margin: 54px 14px;
+	}
+
+	.portfolio-text-item {
+		margin: 12px 24px;
+		height: 256px;
+		padding: 24px;
+		text-align: left;
+	}
+
+	#lego {	
+		padding: 24px;
+		margin: 12px 24px;
+		background-color: #FFAB00;
+	}
+
+	#bug {
+		padding: 24px;
+		margin: 12px 24px;
+		background-color: #7D929C;
+	}	
+
+	#still-life {
+		height: 256px;
+		width: 320px;
+		padding: 24px;
+		margin: 12px 24px 24px 24px;
+		background-color: #A41010;
+	}
+
+	img {
+		height: 256px;
+		width: 320px;
+	}
+}
